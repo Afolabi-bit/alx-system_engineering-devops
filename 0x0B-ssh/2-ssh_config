@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#Configure SSH client to connect to a server without password
+Host *
+  PasswordAuthentication no
+  PubkeyAuthrntication yes
