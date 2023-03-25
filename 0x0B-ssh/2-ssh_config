@@ -2,4 +2,8 @@
 #Configure SSH client to connect to a server without password
 Host *
   PasswordAuthentication no
-  PubkeyAuthrntication yes
+  HashKnownHosts yes
+  SendEnv LANG LC_*
+  GSSAPIAuthentication yes
+  GSSAPIDelegateCredentials no
+  IdentityFile ~/.ssh/school
