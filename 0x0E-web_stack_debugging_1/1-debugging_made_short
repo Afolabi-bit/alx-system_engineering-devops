@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Commands used to fix an error preventing 
+# Commands used to make nginx listen on port 80 
 cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 sudo service nginx restart
-sudo service nginx stop
+pkill -o nginx
